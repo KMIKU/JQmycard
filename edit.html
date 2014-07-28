@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"/>  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<link href="./js/style.css" type="text/css" rel="stylesheet">
+	<style type="text/css">
+		body {background-color:#d0d0d0;}
+		div.no1 {width:50%;float:left;}
+		div.no2 {padding-top: 1%;float: left;}
+		img {max-height: 40%; max-width: 40%;}
+		input{border-radius: 5px;border-color: #fff;text-size: 1.05em;}
+		input.in1 {height:33px;margin:4%;}
+		input.in2 {height:33px;margin:1%;width:96%;}
+	</style>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	$("#save").click(function(){
+	    		window.location.href="card.html";
+	    	});
+	    	$("#back").click(function(){
+	    		window.location.href="index.html";
+	    	});
+	    })
+	</script>
+</head>
+<body>
+	<div class="ftp">
+		<p>我的名片</p>
+		<button id="back">返回名片夹</button>
+	</div>
+	<div class="fsp"></div>
+	<div>
+			<img src="./image/红叶知弦.jpg"/>
+			<div class="no1">
+				<input class="in1" type="text" id="name" placeholder="姓名" />
+				<input class="in1" type="text" id="company" placeholder="公司"/>
+				<input class="in1" type="tel" id="phone" placeholder="手机号"/>
+			</div>
+			<div class="no2">
+				<form style="float:top;width:100%;">
+			        <input class="in2" type="text" id="weixin" placeholder="微信"/>
+			        <input class="in2" type="text" id="qq" placeholder="QQ"/>
+			        <input class="in2" type="email" id="email" placeholder="邮箱"/>
+			        <input class="in2" type="text" id="address" placeholder="住址"/>
+				</form>
+			</div>
+			<button id="save" class="es">保存</button>
+		</div>
+</body>
+</html>

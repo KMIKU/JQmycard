@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"/>  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<link href="./js/style.css" type="text/css" rel="stylesheet">
+	<style type="text/css">
+	body {background-color: #d0d0d0;}
+	ul {list-style:none;margin-left: 30%;}
+	</style>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	$("#edit").click(function(){
+	    		window.location.href="edit.html";
+	    	});
+	    	$("#back").click(function(){
+	    		window.location.href="index.html";
+	    	});
+	    })
+	</script>
+</head>
+<body>
+	<div class="ftp">
+		<p>我的名片</p>
+		<button id="back">返回名片夹</button>
+	</div>
+	<div class="fsp"></div>
+	<div>
+		<img src="./image/红叶知弦.jpg"/>
+		<ul>
+			<li id="names">姓名:</li>
+			<li id="companys">公司:</li>
+			<li id="phones">手机号:</li>
+			<li id="weixins">微信:</li>
+			<li id="qqs">QQ:</li>
+			<li id="emails">邮箱:</li>
+			<li id="addresss">住址:</li>
+			<li><a href="share.html">分享给好友吧</a></li>
+		</ul>
+		<button id="edit" class="es">编辑</button>
+	</div>
+</body>
+</html>.
